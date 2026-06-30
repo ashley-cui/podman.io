@@ -2,19 +2,19 @@ import { LATEST_VERSION, LATEST_DESKTOP_VERSION } from '@site/static/data/global
 const operatingSystemData = [
   {
     id: 'windows',
-    preferred:{
+    preferred: {
+      title: 'Podman CLI for Windows amd64',
+      subtitle: `Podman Windows Installer v-${LATEST_VERSION}`,
+      icon: 'material-symbols:terminal-rounded',
+      options: [],
+      path: `https://github.com/podman-container-tools/podman/releases/download/v${LATEST_VERSION}/podman-installer-windows-amd64.msi`,
+    },
+    alt:{
       title: 'Podman Desktop for Windows',
       subtitle: `Windows Installer v-${LATEST_DESKTOP_VERSION}`,
       icon: 'fa-brands:windows',
       options: [],
-      path: `https://github.com/containers/podman-desktop/releases/download/v${LATEST_DESKTOP_VERSION}/podman-desktop-${LATEST_DESKTOP_VERSION}-setup.exe`,
-    },
-    alt: {
-      title: 'Podman CLI for Windows',
-      subtitle: `Podman Windows Installer v-${LATEST_VERSION}`,
-      icon: 'material-symbols:terminal-rounded',
-      options: [],
-      path: `https://github.com/containers/podman/releases/download/v${LATEST_VERSION}/podman-${LATEST_VERSION}-setup.exe`,
+      path: `https://podman-desktop.io/downloads/windows`,
     },
     other: {
       path: 'docs/installation',
@@ -24,17 +24,17 @@ const operatingSystemData = [
   {
     id: 'mac',
     preferred: {
+      title: 'Podman CLI for macOS',
+      subtitle: `CLI only ARM64 installer`,
+      icon: 'material-symbols:terminal-rounded',
+      path: `https://github.com/podman-container-tools/podman/releases/download/v${LATEST_VERSION}/podman-installer-macos-arm64.pkg`,
+    },
+    alt: {
       title: 'Podman Desktop for macOS',
       subtitle: `Universal *.dmg v-${LATEST_DESKTOP_VERSION}`,
       icon: 'fa-brands:apple',
       options: [],
-      path: `https://github.com/containers/podman-desktop/releases/download/v${LATEST_DESKTOP_VERSION}/podman-desktop-${LATEST_DESKTOP_VERSION}-universal.dmg`,
-    },
-    alt: {
-      title: 'Podman CLI for macOS',
-      subtitle: `CLI only universal installer`,
-      icon: 'material-symbols:terminal-rounded',
-      path: `https://github.com/containers/podman/releases/download/v${LATEST_VERSION}/podman-installer-macos-universal.pkg`,
+      path: `https://podman-desktop.io/downloads/macos`,
     },
     other: {
       path: 'docs/installation',
@@ -53,7 +53,7 @@ const operatingSystemData = [
       title: 'Podman Desktop for Linux',
       subtitle: `Flatpak v-${LATEST_DESKTOP_VERSION}`,
       icon: 'fa-brands:linux',
-      path: `https://github.com/containers/podman-desktop/releases/download/v${LATEST_DESKTOP_VERSION}/podman-desktop-${LATEST_DESKTOP_VERSION}.flatpak`,
+      path: `https://podman-desktop.io/downloads/linux`,
     },
     other: {
       path: 'docs/installation',
