@@ -10,6 +10,13 @@ const operatingSystemData = [
       path: `https://github.com/podman-container-tools/podman/releases/download/v${LATEST_VERSION}/podman-installer-windows-amd64.msi`,
     },
     alt:{
+      title: 'Podman CLI for Windows arm64',
+      subtitle: `Podman Windows Installer v-${LATEST_VERSION}`,
+      icon: 'material-symbols:terminal-rounded',
+      options: [],
+      path: `https://github.com/podman-container-tools/podman/releases/download/v${LATEST_VERSION}/podman-installer-windows-arm64.msi`,
+    },
+    third: {
       title: 'Podman Desktop for Windows',
       subtitle: `Windows Installer v-${LATEST_DESKTOP_VERSION}`,
       icon: 'fa-brands:windows',
