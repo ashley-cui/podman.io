@@ -4,6 +4,11 @@ Thanks for sending a pull request!
 For more detailed information, please review our contributing guidelines:
 https://github.com/containers/podman/blob/main/CONTRIBUTING.md#submitting-pull-requests
 -->
+#### Concisely describe the change
+
+#### Before screenshot / screen recording
+
+#### After screenshot / screen recording
 
 #### Checklist
 
